@@ -1,0 +1,33 @@
+{
+  "tools": {
+    "mcq_generator": {
+      "name": "MCQ Generator",
+      "description": "Generates multiple-choice questions for a given topic using EduChain.",
+      "url": "http://127.0.0.1:5000/mcq",
+      "method": "GET",
+      "params": {
+        "topic": "Python",
+        "count": "3"
+      }
+    },
+    "lesson_plan": {
+      "name": "Lesson Plan Generator",
+      "description": "Creates a structured lesson plan using EduChain.",
+      "url": "http://127.0.0.1:5000/lesson-plan",
+      "method": "GET",
+      "params": {
+        "subject": "Algebra"
+      }
+    },
+    "flashcard_generator": {
+      "name": "Flashcard Generator",
+      "description": "Generates simple flashcards for a topic (bonus tool).",
+      "url": "http://127.0.0.1:5000/flashcards",
+      "method": "GET",
+      "params": {
+        "topic": "Data Structures",
+        "count": "2"
+      }
+    }
+  }
+}
