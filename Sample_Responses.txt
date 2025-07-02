@@ -1,0 +1,74 @@
+===========================
+Command 1: MCQ Generator
+===========================
+
+Request:
+GET /mcq?topic=Python&count=3
+
+Response:
+{
+  "tool": "mcq_generator",
+  "topic": "Python",
+  "questions": [
+    {
+      "question": "What is Python concept #1?",
+      "options": ["Option A0", "Option B0", "Option C0", "Option D0"],
+      "answer": "Option A0"
+    },
+    {
+      "question": "What is Python concept #2?",
+      "options": ["Option A1", "Option B1", "Option C1", "Option D1"],
+      "answer": "Option A1"
+    },
+    {
+      "question": "What is Python concept #3?",
+      "options": ["Option A2", "Option B2", "Option C2", "Option D2"],
+      "answer": "Option A2"
+    }
+  ]
+}
+
+===========================
+Command 2: Lesson Plan Generator
+===========================
+
+Request:
+GET /lesson-plan?subject=Algebra
+
+Response:
+{
+  "tool": "lesson_plan",
+  "subject": "Algebra",
+  "plan": {
+    "subject": "Algebra",
+    "outline": [
+      "Introduction to Algebra",
+      "Core concepts in Algebra",
+      "Activities and examples",
+      "Assessment and summary"
+    ]
+  }
+}
+
+===========================
+Command 3: Flashcard Generator (Bonus)
+===========================
+
+Request:
+GET /flashcards?topic=Data Structures&count=2
+
+Response:
+{
+  "tool": "flashcard_generator",
+  "topic": "Data Structures",
+  "cards": [
+    {
+      "term": "Data Structures Term 1",
+      "definition": "Definition of Data Structures Term 1"
+    },
+    {
+      "term": "Data Structures Term 2",
+      "definition": "Definition of Data Structures Term 2"
+    }
+  ]
+}
