@@ -1,14 +1,11 @@
-# mcp_server.py
-# AI Intern Assignment - MCP Server using EduChain (Simulated)
+# AI Intern Assignment - MCP Server using EduChain
 # Author: Lakshya
-# Description: Simulated EduChain tools exposed as an MCP-compatible server (fully working)
 
 from fastapi import FastAPI, Query
 import uvicorn
 
 app = FastAPI(title="EduChain MCP Server (Simulated)")
 
-# ✅ Simulated MCQ Generator
 def generate_mcqs(topic: str, count: int = 5):
     return [
         {
@@ -19,7 +16,7 @@ def generate_mcqs(topic: str, count: int = 5):
         for i in range(count)
     ]
 
-# ✅ Simulated Lesson Plan Generator
+
 def generate_lesson_plan(subject: str):
     return {
         "subject": subject,
