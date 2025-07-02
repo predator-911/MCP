@@ -1,5 +1,29 @@
 ===========================
-Command 1: MCQ Generator
+Command: Flashcard Generator (Bonus)
+===========================
+
+Request:
+GET /flashcards?topic=Data Structures&count=2
+
+Response:
+{
+  "tool": "flashcard_generator",
+  "topic": "Data Structures",
+  "cards": [
+    {
+      "term": "Data Structures Term 1",
+      "definition": "Definition of Data Structures Term 1"
+    },
+    {
+      "term": "Data Structures Term 2",
+      "definition": "Definition of Data Structures Term 2"
+    }
+  ]
+}
+
+
+===========================
+Command: MCQ Generator
 ===========================
 
 Request:
@@ -28,8 +52,9 @@ Response:
   ]
 }
 
+
 ===========================
-Command 2: Lesson Plan Generator
+Command: Lesson Plan Generator
 ===========================
 
 Request:
@@ -48,27 +73,4 @@ Response:
       "Assessment and summary"
     ]
   }
-}
-
-===========================
-Command 3: Flashcard Generator (Bonus)
-===========================
-
-Request:
-GET /flashcards?topic=Data Structures&count=2
-
-Response:
-{
-  "tool": "flashcard_generator",
-  "topic": "Data Structures",
-  "cards": [
-    {
-      "term": "Data Structures Term 1",
-      "definition": "Definition of Data Structures Term 1"
-    },
-    {
-      "term": "Data Structures Term 2",
-      "definition": "Definition of Data Structures Term 2"
-    }
-  ]
 }
